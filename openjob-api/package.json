@@ -1,0 +1,31 @@
+{
+  "name": "openjob-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "start:dev": "nodemon src/app.js",
+    "migrate": "node-pg-migrate up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "amqplib": "^2.0.1",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "joi": "^18.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.1",
+    "nanoid": "^5.1.11",
+    "pg": "^8.20.0",
+    "redis": "^5.12.1"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^8.0.3",
+    "nodemon": "^3.1.14"
+  }
+}
